@@ -1,0 +1,210 @@
+:root {
+  --light: rgb(184, 230, 238);
+}
+/* Universal selector-tells browser to account for border/padding in value specified for an element's width and height, sets padding and margin to zero*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Adds font family to body of webpage */
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* Sets color for links and shows link text without underline decoration */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*Adds font family, color, and background color to header and navigation bar at the top of the page. Also sets header as flex container  */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #0b472e;
+  color: #ffffff;
+}
+
+/* Sets font size to 48px for top h1 header and adds padding to h1 */
+header h1 {
+  padding-left: 15px;
+  padding-top: 5px;
+  font-size: 48px;
+}
+
+/* Adds font, margin, and font size to navigation bar at the top */
+header nav {
+  padding-right: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+
+/* Makes list items in navigation bar appear without specific styling and sets the nav list as a flex container */
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* formatting for list items in nav bar */
+header nav ul li {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* background color for main content of page */
+.content {
+  background-color: var(--light);
+}
+
+/* formatting for about me section */
+.about-me {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 90%;
+  width: 90%;
+  border-radius: 0.5rem;
+  padding-top: 2rem;
+}
+
+/* formatting for .work and .contact, sets them as flex containers */
+.work,
+.contact {
+  display: flex;
+  flex-flow: row wrap;
+  height: 90%;
+  width: 90%;
+  border-radius: 0.5rem;
+  padding-top: 1rem;
+}
+
+/* Formatting for h2 headings for each of the main sections */
+.about-me h2,
+.work h2,
+.contact h2 {
+  padding-left: 3.5rem;
+  padding-right: 5rem;
+}
+
+/* formats .work-examples and .contact p to display as a flex container, sets padding and orientation */
+.work-examples,
+.contact p {
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 15rem;
+}
+
+/* formats the image in the about me section */
+.about-me img {
+  max-height: 15rem;
+  padding-right: 3rem;
+}
+
+/* Formats the work example sections 2-3 */
+.work-4,
+.work-2,
+.work-3 {
+  text-align: center;
+  font-size: 150%;
+  color: var(--light);
+  border-style: solid;
+  border-width: 0.7rem;
+  border-color: rgb(133, 89, 13);
+  box-shadow: 0.2rem 0.2rem 0.2rem midnightblue;
+  padding: 5rem;
+  margin: 1rem;
+  flex: 1 0 200px;
+}
+
+/* Formats the first work example section to have a larger grow basis than the others */
+.work-1 {
+  text-align: center;
+  font-size: 150%;
+  color: var(--light);
+  border-style: solid;
+  border-width: 0.7rem;
+  border-color: rgb(133, 89, 13);
+  box-shadow: 0.2rem 0.2rem 0.2rem midnightblue;
+  min-width: 100%;
+  padding: 5rem;
+  margin: 1rem;
+  flex: 5 0 200px;
+  background-image: url("https://images.unsplash.com/photo-1501854140801-50d01698950b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1140&q=80");
+  background-size: cover;
+}
+
+/* Sets background images for each work example section and formats photo to cover the flexbox */
+.work-4 {
+  background-image: url("https://images.unsplash.com/photo-1476897017502-219c9169bd6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80");
+  background-size: cover;
+}
+
+.work-2 {
+  background-image: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+}
+
+.work-3 {
+  background-image: url("https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+}
+
+/* changes the padding around text to a lighter color when user's cursor is positioned over the element */
+nav ul li:hover {
+  background-color: var(--light);
+}
+
+/* Changes the color to a lighter coloer when hovering cursor over each project work text */
+#work h4:hover {
+  background-color: var(--light);
+}
+
+/* Makes the contact section a flex container */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Formats the contacts list */
+.contact ul {
+  flex-flow: row wrap;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Adds padding on either side of each contact list item */
+.contact ul li {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Use flex-direction to stack the navbar, and body */
+  main,
+  header {
+    flex-direction: column;
+  }
+  /* Changes the header background */
+  header {
+    background: #772014;
+  }
+  /* Changes the navbar background */
+  nav {
+    background-color: #bb8588;
+  }
+}
+
+/* Makes the list items in the header and the contact section stack */
+@media screen and (max-width: 576px) {
+  .contact ul,
+  .header ul li {
+    flex-direction: column;
+  }
+}
