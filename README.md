@@ -6,4 +6,4 @@
 
 #### Live link to the website: https://gim928.github.io/HW2-Portfolio-Gina/
 
-##### Screenshot: https://github.com/gim928/HW2-Portfolio-Gina/blob/main/Assets/Full-size-screenshot.png
+##### Screenshot: ![screenshot](https://github.com/gim928/HW2-Portfolio-Gina/blob/main/Assets/Full-size-screenshot.png)
